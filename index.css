@@ -16,11 +16,15 @@ body {
   padding: 20px;
 }
 
-#Logo {
+.logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   animation: logo 3s linear infinite;
+}
+
+.logo-center {
+  display: none;
 }
 
 @keyframes logo {
@@ -118,42 +122,31 @@ hr {
   margin: 20px 0;
 }
 
-/* ✅ Mobile Responsive Design */
-@media (max-width: 600px) {
-  body{
+/* ✅ Mobile View */
+@media (max-width: 768px) {
+  body {
     font-size: 14px;
     padding: 10px;
     text-align: left;
     background-color: aqua;
   }
 
+  .logo-left,
+  .logo-right {
+    display: none;
+  }
+
+  .logo-center {
+    display: block;
+    margin-bottom: 10px;
+  }
+
   .header-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
+    flex-direction: column;
+    text-align: center;
+  }
 
-#Logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  animation: logo 3s linear infinite;
-}
-
-#welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#welcome h2 {
-  font-size: 2em;
-  animation: welcome 2s ease-in;
-}
-
- 
+  #welcome h2 {
+    font-size: 1.5em;
+  }
 }
