@@ -91,6 +91,8 @@ nav a:hover {
   margin-top: 20px;
   font-size: 1.5em;
   animation: welcome 2s ease-in;
+  justify-content: center;
+  align-items: center;
 }
 
 #image {
