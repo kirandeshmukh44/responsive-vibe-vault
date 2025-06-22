@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #695acd49);
+    /* background-image: url(6.jpg); */
+    /* background-size: cover; */
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#Logo{
+    height: 2cm;
+    width: 2cm;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-style: italic;
+}
+
+
+nav {
+    background: #473d8b00;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #695acd5e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation-name: button;
+    animation-duration: 2s;
+}
+@keyframes button {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+nav a:hover {
+    background: #9370db;
+    border-radius: 40%;
+}
+
+
+hr {
+    border-color: #aaa;
+}
+
+/* Main Sections */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro,
+.card,
+.community,
+.future {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px;
+    line-height: 0.7cm;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes scroll {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0px); */
+         transform: translateY(0) scale(1) rotateY(0deg);
+    }
+}
+
+
+
+#about{
+    width: 7cm;
+    height: 5cm;
+}
+
+#unique{
+     width: 7cm;
+    height: 5cm;
+}
+
+#community{
+    width: 7cm;  
+    height: 5cm;
+}
+
+#intro{
+    width: 10cm;
+    height: 10cm;
+}
+
+
+footer {
+    background: #2e2e3b00;
+    padding: 10px;
+}
