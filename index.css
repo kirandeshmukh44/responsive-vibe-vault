@@ -31,6 +31,7 @@ body {
 .header-text h1 {
   margin: 0;
   font-size: 2em;
+  text-align: center;
 }
 
 #head {
@@ -88,6 +89,8 @@ nav a:hover {
 
 #welcome h2 {
   margin-top: 20px;
+  font-size: 1.5em;
+  animation: welcome 2s ease-in;
 }
 
 #image {
@@ -111,5 +114,40 @@ hr {
 
 /* ✅ Mobile Responsive Design */
 @media (max-width: 600px) {
-  
+  body{
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    background-color: aqua;
+  }
+
+  .header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#Logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: logo 3s linear infinite;
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#welcome h2 {
+  font-size: 2em;
+  animation: welcome 2s ease-in;
+}
+
+ 
 }
