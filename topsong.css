@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #695acd49);
+    /* background-image: url(6.jpg); */
+    /* background-size: cover; */
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#Logo{
+    height: 2cm;
+    width: 2cm;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes logo {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-style: italic;
+}
+
+
+nav {
+    background: #473d8b00;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #695acd5e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation-name: button;
+    animation-duration: 2s;
+
+}
+@keyframes button {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
+}
+
+nav a:hover {
+    background: #9370db;
+    border-radius: 40%;
+}
+
+
+hr {
+    border-color: #aaa;
+}
+
+/* Headings and Subtext */
+.main-heading {
+    color: #bd4d4d;
+}
+
+.subtext {
+    font-style: italic;
+    /* color: #333; */
+}
+
+/* Genre Buttons */
+.genre-buttons {
+    margin: 30px 0;
+}
+
+.genre-buttons button {
+    padding: 15px 40px;
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation-name: btn;
+    animation-duration: 800ms;
+
+}
+@keyframes btn {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+.genre.marathi {
+    background-color: #9370db;
+    box-shadow: 0 0 7px #ccc;
+}
+
+.genre.hindi {
+    background-color: #ba55d3;
+    box-shadow: 0 0 7px #ccc;
+}
+
+.genre.english {
+    background-color: #8a2be2;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.genre.punjabi {
+    background-color: #7b68ee;
+    box-shadow: 0 0 7px #ccc;
+}
+
+.marathi:hover{
+    background: #9370db;
+    border-radius: 40%;
+}
+
+.hindi:hover{
+    background: #9370db;
+    border-radius: 40%;
+}
+
+.english:hover{
+    background: #9370db;
+    border-radius: 40%;
+}
+
+.punjabi:hover{
+    background: #9370db;
+    border-radius: 40%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 175px;
+    margin-bottom: 20px;
+}
